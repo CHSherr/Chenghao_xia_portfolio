@@ -1,0 +1,101 @@
+nav {
+  position: sticky;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  color: white;
+}
+nav > .name {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+nav > .Job {
+  grid-column-start: 7;
+  grid-column-end: 13;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+body {
+  background-color: black;
+}
+section > p {
+  color: white;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.About > h2 {
+  color: white;
+  opacity: 0.4;
+}
+.About > p {
+  color: white;
+}
+.Experience {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  color: white;
+}
+.Experience > [class^="Title"] {
+  opacity: 0.4;
+}
+.Title1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.Title2 {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+.Company {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.Description {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  color: white;
+}
+.Gallery > [class^="column"] {
+  flex: 1;
+  padding: 5px;
+}
+.column2 {
+  height: 200px;
+}
+.Gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .Experience {
+    grid-column-start: 7;
+  }
+  .About {
+    grid-column-end: 5;
+  }
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
