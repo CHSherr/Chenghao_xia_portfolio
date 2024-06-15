@@ -3,10 +3,22 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  border: solid #343a40;
+  display: flex;
+  padding: 10px;
 }
 .teko-h2 {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center the paragraphs horizontally */
+  text-align: center; /* Center the text inside the paragraphs */
 }
