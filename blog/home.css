@@ -33,6 +33,24 @@
   padding: 10px;
 }
 
-.teko-button {
+main > [class^="teko-button"] {
   color: black;
+  height: 25px;
+  width: 25px;
+  display: flex;
+}
+.teko-test > p {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border: solid #343a40;
+  display: flex;
+  padding: 10px;
+}
+
+.teko-test {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
