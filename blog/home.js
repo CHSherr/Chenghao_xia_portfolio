@@ -9,7 +9,7 @@ function add() {
   newButton.innerHTML = "-";
   newButton.classList.add("teko-button-delete");
   newButton.setAttribute("onclick", "deletion(this)");
-
+  newButton.setAttribute("ontouchstart", "deletion(this)");
   newDiv.appendChild(newParagraph);
   newDiv.appendChild(newButton);
 
