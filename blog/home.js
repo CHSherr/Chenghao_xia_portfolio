@@ -24,3 +24,15 @@ function deletion(button) {
     targetElement.remove();
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const savedContent = localStorage.getItem("content");
+  if (savedContent) {
+    document.getElementById("content").innerHTML = savedContent;
+  }
+});
+
+function save() {
+  const content = document.getElementById("content").innerHTML;
+  localStorage.setItem("content", content);
+}
