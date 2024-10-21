@@ -80,7 +80,7 @@ section > p {
   height: 200px;
 }
 .Gallery img {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: block;
 }
@@ -98,4 +98,121 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+.Gallery > img {
+  border: 0.2px solid rgba(255, 255, 255, 0.5); /* Base border */
+  border-radius: 5px; /* Optional: to make the corners rounded */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+#left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#nameTag {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+
+#profession {
+  color: grey;
+}
+
+#pages {
+  color: white;
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #2c2c2c;
+  border: 2px solid #454545;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#second-layer {
+  height: 75%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 38px;
+}
+
+#second-layer > div {
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 38px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #363636;
+}
+.unselected {
+  background-color: #2c2c2c;
+}
+
+#second-layer > div:hover {
+  background-color: #363636;
+}
+
+#lightbar {
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+}
+
+#shadow {
+  width: 30px;
+  height: 30px;
+  background-color: #2c2c2c;
+  border-radius: 40px;
+  position: absolute;
+  z-index: 5;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Consistent inner shadow */
+  z-index: 1;
+}
+
+#external {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
