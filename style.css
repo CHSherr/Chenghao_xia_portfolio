@@ -216,3 +216,169 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+#work-section {
+  display: grid;
+}
+
+#about-section {
+  display: none;
+}
+#about-content {
+  display: block;
+}
+
+#gallery-section {
+  display: none;
+}
+
+#follower {
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.hero-bg {
+  width: 100vw;
+}
+
+#hero-section-about-1 {
+  background-image: url("./images/astranaut.jpg");
+  width: 100vw;
+  height: 40vh;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.heading {
+  color: white;
+  font-size: 24px;
+  margin-top: -48px;
+  margin-bottom: 20px;
+}
+
+/* #hero-section-about-1 > div {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 56px;
+  transition: color 2s ease;
+  border: 2px solid #2c2c2c;
+}
+
+#hero-section-about-1 > div::after {
+  background-color: orange;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 2s ease;
+}
+
+#hero-section-about-1 > div:hover {
+  transform: scaleY(1.1);
+  background-color: red;
+}
+
+#hero-section-about-1 > div:hover::after {
+  transform: scaleY(1);
+} */
+
+#hero-section-about-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.animated-text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 30px;
+}
+
+.animated-text:hover {
+  background-color: #ff525277;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.container > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 56px;
+  border-top: 1px solid #2c2c2c;
+  height: 100px;
+}
+
+#hero-section-about-2 {
+  background-image: url("./images/vr.jpg");
+  width: 100vw;
+  height: 40vh;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#hero-section-about-3 {
+  background-image: url("./images/back.jpeg");
+  width: 100vw;
+  height: 60vh;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.motto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: wheat;
+}
+
+#motto-title {
+  margin-top: 200px;
+  font-size: 18px;
+}
+
+#motto {
+  margin-top: 20px;
+  font-size: 72px;
+}
+#motto2 {
+  font-size: 72px;
+}
+
+#motto-author {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.time {
+  font-size: 28px;
+}
+
+.status {
+  font-size: 28px;
+}
+
+.loc {
+  font-size: 12px;
+}

@@ -7,6 +7,10 @@ document.getElementById("work").addEventListener("click", function () {
   document.getElementById("gallery").classList.add("unselected");
   console.log("work");
   moveLightbar();
+  document.getElementById("work-section").style.display = "grid";
+
+  document.getElementById("gallery-section").style.display = "none";
+  document.getElementById("about-content").style.display = "none";
 });
 
 document.getElementById("about").addEventListener("click", function () {
@@ -18,6 +22,10 @@ document.getElementById("about").addEventListener("click", function () {
   document.getElementById("gallery").classList.add("unselected");
   console.log("about");
   moveLightbar();
+
+  document.getElementById("work-section").style.display = "none";
+  document.getElementById("gallery-section").style.display = "none";
+  document.getElementById("about-content").style.display = "block";
 });
 
 document.getElementById("gallery").addEventListener("click", function () {
@@ -29,6 +37,9 @@ document.getElementById("gallery").addEventListener("click", function () {
   document.getElementById("about").classList.add("unselected");
   console.log("gallery");
   moveLightbar();
+  document.getElementById("gallery-section").style.display = "grid";
+  document.getElementById("work-section").style.display = "none";
+  document.getElementById("about-content").style.display = "none";
 });
 
 function moveLightbar() {
@@ -47,3 +58,11 @@ function moveLightbar() {
   shadow.style.top = rect.top - 9 + "px";
 }
 moveLightbar();
+
+window.addEventListener("resize", moveLightbar);
+
+// window.addEventListener("mousemove", function (e) {
+//   const follower = document.getElementById("follower");
+//   follower.style.left = e.clientX - 15 + "px";
+//   follower.style.top = e.clientY - 15 + "px";
+// });
