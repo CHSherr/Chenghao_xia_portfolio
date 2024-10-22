@@ -7,7 +7,7 @@ document.getElementById("work").addEventListener("click", function () {
   document.getElementById("gallery").classList.add("unselected");
   console.log("work");
   moveLightbar();
-  document.getElementById("work-section").style.display = "grid";
+  document.getElementById("work-content").style.display = "block";
 
   document.getElementById("gallery-section").style.display = "none";
   document.getElementById("about-content").style.display = "none";
@@ -23,7 +23,7 @@ document.getElementById("about").addEventListener("click", function () {
   console.log("about");
   moveLightbar();
 
-  document.getElementById("work-section").style.display = "none";
+  document.getElementById("work-content").style.display = "none";
   document.getElementById("gallery-section").style.display = "none";
   document.getElementById("about-content").style.display = "block";
 });
@@ -38,7 +38,7 @@ document.getElementById("gallery").addEventListener("click", function () {
   console.log("gallery");
   moveLightbar();
   document.getElementById("gallery-section").style.display = "grid";
-  document.getElementById("work-section").style.display = "none";
+  document.getElementById("work-content").style.display = "none";
   document.getElementById("about-content").style.display = "none";
 });
 

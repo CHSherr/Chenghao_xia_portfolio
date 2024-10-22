@@ -23,12 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <div id="left">
-        <img src="images/logo.webp" alt="Logo" id="logo" />
+        <img src="./images/logo.webp" alt="Logo" id="logo" />
         <div id="nameTag">
           <div id="name">Chenghao (Levi) Xia</div>
           <div id="profession">Full Stack Engineer, Trader</div>
@@ -60,42 +60,45 @@
     </header>
 
     <main>
-      <section class="info" id="work-section">
-        <div class="About">
-          <h2>ABOUT</h2>
-          <p>
-            Levi (He/Him) designs interfaces. He thrives in complex, ambiguous
-            problem spaces focused around interactive media, digital tooling,
-            and multimodel interaction. He studied Computer Science at
-            University of Southern California, an experience he holds fondly and
-            will cherish for the rest of his life. If you have an interesting
-            idea, please get in touch
-          </p>
-        </div>
-        <div class="Experience">
-          <p class="Title1">TEAM</p>
-          <p class="Title2">Description</p>
-          <p class="Company">
-            University of Southern California<br />01.2024-05.2024
-          </p>
-          <p class="Description">
-            Software development of a kernel named WeenixOS by implement the
-            file system, virtual memory and processes
-          </p>
+      <div id="work-content">
+        <section class="info" id="work-section">
+          <div class="About">
+            <h2>ABOUT</h2>
+            <p>
+              Levi (He/Him) designs interfaces. He thrives in complex, ambiguous
+              problem spaces focused around interactive media, digital tooling,
+              and multimodel interaction. He studied Computer Science at
+              University of Southern California, an experience he holds fondly
+              and will cherish for the rest of his life. If you have an
+              interesting idea, please get in touch
+            </p>
+          </div>
+          <div class="Experience">
+            <p class="Title1">TEAM</p>
+            <p class="Title2">Description</p>
+            <p class="Company">
+              University of Southern California<br />01.2024-05.2024
+            </p>
+            <p class="Description">
+              Software development of a kernel named WeenixOS by implement the
+              file system, virtual memory and processes
+            </p>
 
-          <p class="Company">University of Nottingham<br />05.2022-08.2022</p>
-          <p class="Description">
-            Software development and project manager of a project to build an
-            accessory device for defect detection using machine learning which
-            is used in a 5-axes CNC manufacturing machine
-          </p>
-          <p class="Company">University of Nottingham<br />05.2021-08.2021</p>
-          <p class="Description">
-            Software development and project manager of a project to create a
-            large format (1000x1000x800) FDM pellet 3D printer
-          </p>
-        </div>
-      </section>
+            <p class="Company">University of Nottingham<br />05.2022-08.2022</p>
+            <p class="Description">
+              Software development and project manager of a project to build an
+              accessory device for defect detection using machine learning which
+              is used in a 5-axes CNC manufacturing machine
+            </p>
+            <p class="Company">University of Nottingham<br />05.2021-08.2021</p>
+            <p class="Description">
+              Software development and project manager of a project to create a
+              large format (1000x1000x800) FDM pellet 3D printer
+            </p>
+          </div>
+        </section>
+      </div>
+
       <div id="about-content">
         <div id="hero-section-about-1"></div>
         <div class="heading">WHAT DO I DO</div>
@@ -216,6 +219,6 @@
 
     <footer></footer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
