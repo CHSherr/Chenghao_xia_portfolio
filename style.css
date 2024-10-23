@@ -74,15 +74,27 @@ section > p {
 }
 .Gallery > [class^="column"] {
   flex: 1;
-  padding: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .column2 {
-  height: 200px;
+  height: 150px;
 }
-.Gallery img {
+[class^="column"] > img {
   width: 95%;
   height: auto;
   display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Glow effect */
+}
+
+[class^="column"] > img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect */
 }
 
 @media (min-width: 768px) {
@@ -261,35 +273,6 @@ a {
   margin-top: -48px;
   margin-bottom: 20px;
 }
-
-/* #hero-section-about-1 > div {
-  height: 20%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 56px;
-  transition: color 2s ease;
-  border: 2px solid #2c2c2c;
-}
-
-#hero-section-about-1 > div::after {
-  background-color: orange;
-  transform: scaleY(0);
-  transform-origin: center;
-  transition: transform 2s ease;
-}
-
-#hero-section-about-1 > div:hover {
-  transform: scaleY(1.1);
-  background-color: red;
-}
-
-#hero-section-about-1 > div:hover::after {
-  transform: scaleY(1);
-} */
 
 #hero-section-about-1 {
   display: flex;
